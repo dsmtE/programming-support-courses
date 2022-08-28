@@ -18,7 +18,7 @@ module.exports = async () => {
   return {
     title: 'Cours de soutien programmation',
     tagline: '',
-    url: `https://dsmtE.github.io/`,
+    url: `https://dsmte.github.io/`,
     baseUrl: '/programming-support-courses/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
