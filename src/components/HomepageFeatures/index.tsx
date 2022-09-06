@@ -14,17 +14,16 @@ const FeatureList: FeatureItem[] = [
     imgSrc: require('@site/static/imgs/icons8-tools-100.png').default,
     description: (
       <>
-        Avec les bons outils tu vas pouvoir aborder la programmation plus aisement.
+        Avec les bons outils tu vas pouvoir aborder la programmation plus facilement.
       </>
     ),
   },
   {
-    title: 'Rnforcer ses connaissances',
+    title: 'Renforcer ses connaissances',
     imgSrc: require('@site/static/imgs/icons8-messaging-100.png').default,
     description: (
       <>
-      Quel que soit son niveau, tu seras toujours le bienvenue ici pour poser des questions.
-      L'important, c'est de s'améliorer.
+      Quel que soit ton niveau, tu seras toujours le.a bienvenu.e pour poser des questions.
       </>
     ),
   },
@@ -33,8 +32,8 @@ const FeatureList: FeatureItem[] = [
     imgSrc: require('@site/static/imgs/icons8-learning-100.png').default,
     description: (
       <>
-        Pratiquer est la clé pour s'ameliorer et en apprendre plus.
-        Je serez là pour t'accompagner si necessaire.
+        Pratiquer est la clé pour s'améliorer et en apprendre plus.
+        Je serai là pour t'accompagner au cours de l'année.
       </>
     ),
   },
