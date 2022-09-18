@@ -1,3 +1,0 @@
----
-title: Installer un IDE
----
