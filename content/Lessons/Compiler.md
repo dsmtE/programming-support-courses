@@ -87,6 +87,20 @@ int main() {
 }
 ```
 
+:::note
+
+```cpp
+#include <iostream>
+```
+
+Le but de notre programme est d’afficher un message. Des développeurs experts ont déjà créé un outil qui permet de le faire facilement. Il se trouve dans un fichier nommé **iostream**, acronyme de "Input Output Stream", soit "Flux d’Entrées Sorties" dans la langue de Molière. Ce fichier fait partie de la bibliothèque standard C++ **STL**(pour "Standard Template Library"), un ensemble de fonctionnalité déjà pré-codées et incluses partout avec chaque compilateur C++.
+
+Pour utiliser les fonctionnalités offertes par ce fichier, notamment écrire un message, on doit l’importer dans notre programme. On dit qu’on l’inclut, d’où l’anglais "include". Nous utiliserons beaucoup cette fonctionnalité en C++.
+
+Enfin, dernière remarque, la ligne commence par le symbole **#**. C’est ce qu’on appelle une directive de préprocesseur. Le préprocesseur est un programme qui se lance automatiquement au début de la compilation, notamment pour importer les fichiers qu’on lui demande. Retenez que **#include** nous permet d’importer des fichiers pour les inclure dans le programme que l'on est en train d'écrire.
+
+:::
+
 Une fois ce fichier helloImac.cpp créé, compile le simplement avec la commande suivante:
 
 ```bash
