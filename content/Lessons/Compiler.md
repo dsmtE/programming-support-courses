@@ -6,8 +6,7 @@ tags:
 ---
 
 import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem'
-import CodeBlock from "@theme/CodeBlock"
+import TabItem from '@theme/TabItem';
 import { Button, Chip } from "@mui/material";
 
 ## Introduction
@@ -29,7 +28,14 @@ Nous allons voir ensemble comment installer un compilateur C++ (nécessaire à t
 
 <TabItem value="Windows" label="Windows">
 
-Tu trouveras [ici](https://code.visualstudio.com/docs/cpp/config-msvc) toutes les explications dont tu as besoin (il te suffit de suivre la section **Prérequis**).
+Dans le cas de Windows, il existe plusieurs alternatives:
+
+- Utiliser MSVC:
+    Tu peux te rendre [là](https://visualstudio.microsoft.com/fr/downloads/) et cliquer sur le bouton télécharger de la section "Build Tools pour Visual Studio 2022" 
+    Tu trouveras [ici](https://code.visualstudio.com/docs/cpp/config-msvc) toutes les explications dont tu as besoin (il te suffit de suivre la section **Prérequis**).
+
+-minGW64:
+    Tu peux également choisir d'installer minGW64 via MSYS2. Tu trouveras des explications [ici](https://code.visualstudio.com/docs/cpp/config-mingw) et [là](https://www.msys2.org/).
 
 Ensuite il faudra installer CMake, tu peux te rendre <a href="https://cmake.org/download/">ici</a> et sélectionner l'installeur **Windows x64 Installer**.
 
