@@ -235,10 +235,10 @@ int main() {
 
 Dans cette situation, on calcule un prix hors taxe (*excl. Tax*) auquel on applique une taxe supplémentaire seulement si l'on dépasse un seuil (*threshold*) donné.
 
-Les valeurs du problème sont choisis aléatoirement (entre des valeurs données), c'est dans ce genre de cas, où l'on ne connaît pas toutes les valeurs à l'avance, qu'un débogueur est très utile.
+Les valeurs du problème sont choisies aléatoirement (entre des valeurs données), c'est dans ce genre de cas, où l'on ne connaît pas toutes les valeurs à l'avance, qu'un débogueur est très utile.
 
 :::info
-**Rand()** donne un nombre aléatoire entier(**int**) entre **0** et **RAND_MAX** (la valeur maximale qu'un **int** peut prendre).
+**rand()** donne un nombre aléatoire entier (**int**) entre **0** et **RAND_MAX** (la valeur maximale qu'un **int** peut prendre).
 
 Pour obtenir des nombres aléatoires flottants, il faut donc dire au code d'interpréter le nombre entier comme un nombre à virgule (c'est ce à quoi sert le ***static_cast***) puis de ramener le nombre aléatoire dans un intervalle facile à manipuler ($[0, 1[$) à l'aide d'une division par **RAND_MAX**.
 
@@ -246,9 +246,9 @@ Pour obtenir des nombres aléatoires flottants, il faut donc dire au code d'inte
  static_cast<float>(rand()) / RAND_MAX
 ```
 
-Il existe de meilleures façons de récupérer un nombre aléatoire en C++ moderne mais nous allons dans cet exemple utiliser la fonction **Rand()** qui vient du **C** pour éviter une complexité inutile.
+Il existe de meilleures façons de récupérer un nombre aléatoire en C++ moderne mais nous allons dans cet exemple utiliser la fonction **rand()** qui vient du **C** pour éviter une complexité inutile.
 
-Pour les curieux le début de cet article en parle bien: [lien](https://www.fluentcpp.com/2019/05/24/how-to-fill-a-cpp-collection-with-random-values/) ou encore la doc [ici](https://en.cppreference.com/w/cpp/numeric/random)).
+Pour les curieux le début de cet article en parle bien: [lien](https://www.fluentcpp.com/2019/05/24/how-to-fill-a-cpp-collection-with-random-values/) ou encore la doc [ici](https://en.cppreference.com/w/cpp/numeric/random).
 
 ::: 
 
@@ -256,7 +256,7 @@ On cherche donc à savoir quel est le prix final.
 
 Voilà le résultat obtenu après le premier lancement :
 
-```bash
+```
 > The product costs 26.956euros/kg
 > How much do you want to buy (in kg): 5
 
@@ -269,5 +269,5 @@ On pourrait **print** les variables intermédiaires comme **priceExclTax** mais 
 
 Allez, je te laisse chercher où sont les erreurs.
 
-> Tu as sur cet exercice le droit de modifier du code pour corriger celui-ci mais pas d'ajout de **print**(std::cout), je te vois venir :stuck_out_tongue:
+> Tu as sur cet exercice le droit de modifier du code pour corriger celui-ci mais pas d'ajout de **print** (std::cout), je te vois venir :stuck_out_tongue:
 

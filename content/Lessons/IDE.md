@@ -14,16 +14,16 @@ import TabItem from '@theme/TabItem';
 Un **IDE** (Integrated Development Environment) est comme un éditeur de texte, mais beaucoup plus puissant !
 Il possède de nombreuses fonctionnalités supplémentaires qui vous aideront à écrire, exécuter et déboguer votre code !
 
-Ce cours va présenter principalement [Visual Studio Code](https://code.visualstudio.comp)(VSCode en abrégé) et je vous recommande fortement de l'utiliser pour débuter dans le monde de la programmation.
+Ce cours va présenter principalement [Visual Studio Code](https://code.visualstudio.comp) (VSCode en abrégé) et je vous recommande fortement de l'utiliser pour débuter dans le monde de la programmation.
 Il est versatile, compatible avec n'importe quel système d'exploitation et s'adapte, grâce à une gestion d'extensions très ingénieuse, à une multitude de langages et de cas d'utilisation.
 
-Il existe évidemment de nombreuses alternatives et si tu sais déjà te servir de ton IDE préféré alors tu peux très bien utiliser celui de ton choix, mais j'aurais peut-être plus de difficultés pour t'aider.
+Il existe évidemment de nombreuses alternatives et si tu sais déjà te servir de ton IDE préféré alors tu peux très bien utiliser celui de ton choix, mais j'aurai peut-être plus de difficultés pour t'aider.
 
 # Installation
 
 Tout d'abord il s'agit d'installer l'IDE.
 
-Rends toi [ici](https://code.visualstudio.com/Download) et sélectionne l'installeur adapté à ton système d'exploitation.
+Rends-toi [ici](https://code.visualstudio.com/Download) et sélectionne l'installeur adapté à ton système d'exploitation.
 
 ## Les extensions
 
@@ -45,9 +45,9 @@ Voilà une liste non exhaustive d'autres extensions que je recommande et que j'u
 - <VSCodeExtension id="vscode-icons-team.vscode-icons"/> : Permet d'avoir des icônes plus jolis par type de fichier
 - <VSCodeExtension id="ms-vsliveshare.vsliveshare"/> : Cela permet de travailler à distance à plusieurs dans un seul et même éditeur. C'est génial pour travailler ensemble !
 - <VSCodeExtension id="wmaurer.change-case"/> : Permet de changer de format d'écriture (`case` en anglais) facilement 
-- <VSCodeExtension id="Gruntfuggly.todo-tree"/> : Permet de recenser et filtrer les **TODO** d'un projet de code.
-- <VSCodeExtension id="teabyii.ayu"/> : Le thème que j'utilise
-- <VSCodeExtension id="eamodio.gitlens"/> : Permet de manipuler **Git** depuis l'IDE 
+- <VSCodeExtension id="Gruntfuggly.todo-tree"/> : Permet de recenser et filtrer les <b>TODO</b> d'un projet de code.
+- <VSCodeExtension id="teabyii.ayu"/> : Le thème de couleur que j'utilise
+- <VSCodeExtension id="eamodio.gitlens"/> : Permet de manipuler <b>Git</b> depuis l'IDE 
 - <VSCodeExtension id="yzhang.markdown-all-in-one"/>  et <VSCodeExtension id="goessner.mdmath"/> : Pour l'édition de markdown
 - <VSCodeExtension id="formulahendry.auto-rename-tag"/> : Permet de refermer les balises web automatiquement
 
