@@ -14,7 +14,7 @@ Ton programme plante et tu ne sais pas où, ni pourquoi ?
 
 Eh bien, le débogueur est là pour t'aider !
 
-Un débogueur permet d'arrêter l'exécution du programme lorsqu'il atteint un point spécifique, appelé **point d'arrêt**(ou **breakpoint** en anglais), ou juste avant qu'un crash se produise.
+Un débogueur permet d'arrêter l'exécution du programme lorsqu'il atteint un point spécifique, appelé **point d'arrêt** (ou **breakpoint** en anglais), ou juste avant qu'un crash se produise.
 
 Une fois atteint, tu es en mesure d'inspecter la valeur de toutes les variables (et de toute la mémoire du programme).
 Tu peux également voir quelles fonctions ont été appelées jusqu'à ce point grâce à la pile d'appel (**callstack**).
@@ -44,7 +44,7 @@ Il suffit d'appuyer sur <kbd>CTRL</kbd> + <kbd>F5</kbd>, ou sur l'icône de debu
 
 ![](./VSCode_imgs/VSCode_bottomBarStartDebug.png)
 
-Ça y est! VSCode est en mode debug et tu vas pouvoir utiliser pleins de fonctionnalités super utiles.
+Ça y est ! VSCode est en mode debug et tu vas pouvoir utiliser plein de fonctionnalités super utiles.
 
 ### Ajouter des points d'arrêt
 

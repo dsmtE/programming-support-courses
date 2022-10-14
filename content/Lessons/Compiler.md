@@ -34,7 +34,7 @@ Dans le cas de Windows, il existe plusieurs alternatives:
     Tu peux te rendre [là](https://visualstudio.microsoft.com/fr/downloads/) et cliquer sur le bouton télécharger de la section "Build Tools pour Visual Studio 2022" 
     Tu trouveras [ici](https://code.visualstudio.com/docs/cpp/config-msvc) toutes les explications dont tu as besoin (il te suffit de suivre la section **Prérequis**).
 
--minGW64:
+- minGW64:
     Tu peux également choisir d'installer minGW64 via MSYS2. Tu trouveras des explications [ici](https://code.visualstudio.com/docs/cpp/config-mingw) et [là](https://www.msys2.org/).
 
 Ensuite il faudra installer CMake, tu peux te rendre <a href="https://cmake.org/download/">ici</a> et sélectionner l'installeur **Windows x64 Installer**.
@@ -48,7 +48,7 @@ Si ta distrubution Linux n'inclut pas de compilateur c'est sûrement que tu sais
 </TabItem>
 
 <TabItem value="Mac" label="Mac">
-Tu as seulement à éxecuter cette commande :
+Tu as seulement à exécuter cette commande :
 
 ```bash
 xcode-select --install
@@ -78,7 +78,7 @@ g++ --version
 
 Tu peux ensuite créer un fichier d'extension *cpp* avec le code suivant:
 
-```cpp
+```cpp title="helloImac.cpp"
 #include <iostream>
 
 int main() {
@@ -93,7 +93,7 @@ int main() {
 #include <iostream>
 ```
 
-Le but de notre programme est d’afficher un message. Des développeurs experts ont déjà créé un outil qui permet de le faire facilement. Il se trouve dans un fichier nommé **iostream**, acronyme de "Input Output Stream", soit "Flux d’Entrées Sorties" dans la langue de Molière. Ce fichier fait partie de la bibliothèque standard C++ **STL**(pour "Standard Template Library"), un ensemble de fonctionnalité déjà pré-codées et incluses partout avec chaque compilateur C++.
+Le but de notre programme est d’afficher un message. Des développeurs experts ont déjà créé un outil qui permet de le faire facilement. Il se trouve dans un fichier nommé **iostream**, acronyme de "Input Output Stream", soit "Flux d’Entrées Sorties" dans la langue de Molière. Ce fichier fait partie de la bibliothèque standard C++ **STL** (pour "Standard Template Library"), un ensemble de fonctionnalité déjà pré-codées et inclues partout avec chaque compilateur C++.
 
 Pour utiliser les fonctionnalités offertes par ce fichier, notamment écrire un message, on doit l’importer dans notre programme. On dit qu’on l’inclut, d’où l’anglais "include". Nous utiliserons beaucoup cette fonctionnalité en C++.
 
@@ -107,7 +107,7 @@ Une fois ce fichier helloImac.cpp créé, compile le simplement avec la commande
 g++ helloImac.cpp -o helloImac.exe
 ```
 
-Cela devrait te donner un exécutable, votre premier programme C++.
+Cela devrait te donner un exécutable, ton premier programme C++.
 
 :::info
 Pour Windows, dans le cas du compilateur MSVC c'est légèrement plus complexe de le faire sans utiliser CMake.

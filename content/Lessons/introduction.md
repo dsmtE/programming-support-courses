@@ -13,7 +13,7 @@ Nous allons avec ce cours découvrir des outils qui vont te permettre d'aborder 
 Tu n'as pas besoin de prérequis ni d'expérience précédente en programmation, que ce soit en C++ ou autre.
 
 Les cours de soutien ne seront pas des cours magistraux mais plutôt une aide pour avancer dans les leçons et TDs.
-Je serai là pour t'acompagner et répondre à tes questions.
+Je serai là pour t'accompagner et répondre à tes questions.
 
 :::note
 
