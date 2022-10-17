@@ -28,7 +28,7 @@ Voici quelques trucs que j'utilise régulièrement et que je conseille d'utilise
 
 ### Bouger les lignes
 
-Après avoir placé ton curseur sur une ligne particulière, tu peux la faire bouger en maintenant <kbd>CTRL</kbd> puis en utilisant les touches <kbd>↑</kbd> et <kbd>↓</kbd>.
+Après avoir placé ton curseur sur une ligne particulière, tu peux la faire bouger en maintenant <kbd>ALT</kbd> puis en utilisant les touches <kbd>↑</kbd> et <kbd>↓</kbd>.
 C'est très utile pour échanger des lignes sans avoir à faire de copier-coller par exemple.
 
 Cela fonctionne également avec une sélection de plusieurs lignes pour bouger toute une fonction par exemple.

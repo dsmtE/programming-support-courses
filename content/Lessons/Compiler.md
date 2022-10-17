@@ -24,10 +24,8 @@ Nous allons voir ensemble comment installer un compilateur C++ (nécessaire à t
 
 ## Installation
 
-<Tabs>
-
+<Tabs groupId="operating-systems">
 <TabItem value="Windows" label="Windows">
-
 Dans le cas de Windows, il existe plusieurs alternatives:
 
 - Utiliser MSVC:
@@ -37,28 +35,59 @@ Dans le cas de Windows, il existe plusieurs alternatives:
 - minGW64:
     Tu peux également choisir d'installer minGW64 via MSYS2. Tu trouveras des explications [ici](https://code.visualstudio.com/docs/cpp/config-mingw) et [là](https://www.msys2.org/).
 
-Ensuite il faudra installer CMake, tu peux te rendre <a href="https://cmake.org/download/">ici</a> et sélectionner l'installeur **Windows x64 Installer**.
-
 </TabItem>
 
 <TabItem value="Linux" label="Linux">
-
 De manière générale, toutes les distributions Linux sont livrées avec un compilateur installé. Si ce n'est pas le cas, consulte [cet article](https://code.visualstudio.com/docs/cpp/config-linux).
-Si ta distrubution Linux n'inclut pas de compilateur c'est sûrement que tu sais très bien ce que tu fais et tu n'as pas du tout besoin de moi :smile: 
+Si ta distrubution Linux n'inclut pas de compilateur c'est sûrement que tu sais très bien ce que tu fais et tu n'as pas du tout besoin de moi :smile:
 </TabItem>
 
-<TabItem value="Mac" label="Mac">
-Tu as seulement à exécuter cette commande :
+<TabItem value="IOS" label="IOS">
+Tu as seulement à éxecuter cette commande :
 
 ```bash
 xcode-select --install
 ```
 
 Je ne suis pas un expert sur IOS, si tu as un problème n'hésite pas à venir me voir ou même demander à tes camarades qui en sauront sûrement plus que moi.
+</TabItem>
+</Tabs>
+
+---
+
+Ensuite il faudra installer CMake.
+Tu peux te rendre <a href="https://cmake.org/download/">ici</a> et sélectionner l'installeur qui correspond à ton OS.
+
+<Tabs groupId="operating-systems">
+
+<TabItem value="Windows" label="Windows">
+
+Tu peux donc choisir <b>Windows x64 Installer</b>.
 
 </TabItem>
 
+<TabItem value="Linux" label="Linux">
+
+Tu peux également passer par ton gestionnaire de paquet et simplement taper la commande suivante :
+
+```bash
+sudo apt-get install cmake
+```
+</TabItem>
+<TabItem value="IOS" label="IOS">
+Tu devrais également pouvoir l'installer via le gestionnaire de paquet <a href="https://brew.sh/">Brew</a> avec la commande suivante : 
+
+```bash
+brew install cmake
+```
+</TabItem>
 </Tabs>
+
+Après l'instalation tu peux vérifier que c'est bien installé en exécutant la commande suivante dans un terminal :
+
+```bash
+cmake --version
+```
 
 :::info
 
@@ -75,6 +104,23 @@ Dans un premier temps, tu vas pouvoir vérifier que le compilateur est bien inst
 ```bash
 g++ --version
 ```
+
+:::caution
+Cela peux ne pas fonctionner si le répertoire contenant le compilateur n'est pas présent dans la variable d'environnement **PATH**.
+La variable d'environnement PATH est en quelques sorte la liste de tout les endroits dans lequel le terminal va essayer de trouver la commande que tu essayes d'executer.
+
+Pour pouvoir avoir accès à la commande **g++** depuis nimporte où dans ton PC il va donc faloir ajouter le chemoin où est installé MingW (généralement C:\MinGW\bin) à cette variable PATH.
+:::
+
+<Tabs groupId="operating-systems">
+
+<TabItem value="Windows" label="Windows">
+
+</TabItem>
+
+</Tabs>
+
+
 
 Tu peux ensuite créer un fichier d'extension *cpp* avec le code suivant:
 
@@ -93,27 +139,54 @@ int main() {
 #include <iostream>
 ```
 
-Le but de notre programme est d’afficher un message. Des développeurs experts ont déjà créé un outil qui permet de le faire facilement. Il se trouve dans un fichier nommé **iostream**, acronyme de "Input Output Stream", soit "Flux d’Entrées Sorties" dans la langue de Molière. Ce fichier fait partie de la bibliothèque standard C++ **STL** (pour "Standard Template Library"), un ensemble de fonctionnalité déjà pré-codées et inclues partout avec chaque compilateur C++.
+Le but de notre programme est d’afficher un message. Des développeurs experts ont déjà créé un outil qui permet de le faire facilement. Il se trouve dans un fichier nommé **iostream**, acronyme de "Input Output Stream", soit "Flux d’Entrées Sorties" dans la langue de Molière. Ce fichier fait partie de la bibliothèque standard C++ **STD** (pour "C++ STandarD library"), un ensemble de fonctionnalité déjà pré-codées et inclues partout avec chaque compilateur C++.
 
 Pour utiliser les fonctionnalités offertes par ce fichier, notamment écrire un message, on doit l’importer dans notre programme. On dit qu’on l’inclut, d’où l’anglais "include". Nous utiliserons beaucoup cette fonctionnalité en C++.
 
-Enfin, dernière remarque, la ligne commence par le symbole **#**. C’est ce qu’on appelle une directive de préprocesseur. Le préprocesseur est un programme qui se lance automatiquement au début de la compilation, notamment pour importer les fichiers qu’on lui demande. Retenez que **#include** nous permet d’importer des fichiers pour les inclure dans le programme que l'on est en train d'écrire.
+Retenez que **#include** nous permet d’importer des fichiers pour les inclure dans le programme que l'on est en train d'écrire.
 
 :::
 
-Une fois ce fichier helloImac.cpp créé, compile le simplement avec la commande suivante:
+Une fois ce fichier helloImac.cpp créé, compile le simplement avec la commande suivante :
+
+<Tabs groupId="operating-systems">
+
+<TabItem value="Windows" label="Windows">
+
+:::caution
+Pour Windows, dans le cas du compilateur **MSVC** c'est légèrement plus complexe de le faire sans utiliser CMake.
+Mais de toute façon, nous n'utiliserons que très peu cette manière de faire car bien trop fastidieuse.
+Pour les curieux, la démarche est expliquée [ici](https://docs.microsoft.com/fr-fr/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-170).
+
+la suite va fonctionner dans le cas d'une instalation de mingw.
+:::
 
 ```bash
 g++ helloImac.cpp -o helloImac.exe
 ```
 
-Cela devrait te donner un exécutable, ton premier programme C++.
+Une fois compilé il suffit de l'exécuter avec la commande suivante :
 
-:::info
-Pour Windows, dans le cas du compilateur MSVC c'est légèrement plus complexe de le faire sans utiliser CMake.
-Mais de toute façon, nous n'utiliserons que très peu cette manière de faire car bien trop fastidieuse.
-Pour les curieux, la démarche est expliquée [ici](https://docs.microsoft.com/fr-fr/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-170).
-:::
+```bash
+./helloImac.exe
+```
+
+</TabItem>
+
+<TabItem value="Linux&IOS" label="Linux & IOS ">
+
+```bash
+g++ helloImac.cpp -o helloImac
+```
+
+Une fois compilé il suffit de l'exécuter avec la commande suivante :
+
+```bash
+./helloImac
+```
+</TabItem>
+</Tabs>
+
 
 Je t'invite maintenant à suivre la section <Chip label="IDE" component="a" href="IDE" variant="outlined" clickable/> pour découvrir VSCode, qui sera l'IDE support pour la suite de ce cours.
 
