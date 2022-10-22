@@ -23,7 +23,7 @@ Il existe évidemment de nombreuses alternatives et si tu sais déjà te servir 
 
 Tout d'abord il s'agit d'installer l'IDE.
 
-Rends-toi [ici](https://code.visualstudio.com/Download) et sélectionne l'installeur adapté à ton système d'exploitation.
+Rends-toi [ici](https://code.visualstudio.com/) et sélectionne l'installeur adapté à ton système d'exploitation.
 
 ## Les extensions
 
